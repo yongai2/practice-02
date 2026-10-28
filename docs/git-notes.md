@@ -49,3 +49,8 @@
 Git 把“改动”分成三个位置：工作区（改文件的地方）、暂存区（`git add` 后的中转站）、
 本地仓库（`git commit` 后的快照）。分支本质上只是一个指向某次提交的可移动指针，
 所以创建和切换分支几乎没有成本，这也是 Git 鼓励“小步提交、频繁分支”的原因。
+
+## 七、alice 的补充
+
+- 解决冲突前先用 `git diff` 查看双方差异，避免误删对方内容。
+- 解决后用 `git status` 确认出现 “All conflicts fixed but you are still merging”，再执行 `git commit`。
